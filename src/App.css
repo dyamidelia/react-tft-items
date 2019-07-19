@@ -29,7 +29,7 @@ img {
   width: 64px;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 319px) {
   img{
     border-radius: 0px;
     height: 16px;
