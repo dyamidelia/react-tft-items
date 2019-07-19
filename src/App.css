@@ -28,3 +28,11 @@ img {
   height: 64px;
   width: 64px;
 }
+
+@media only screen and (max-width: 320px) {
+  img{
+    border-radius: 0px;
+    height: 16px;
+    width: 16px;
+  }
+}
