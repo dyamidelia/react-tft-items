@@ -46,6 +46,7 @@ class App extends Component {
           </tbody>
           </table> */}
 
+        {/*
           <table>
           <thead>
             <tr>
@@ -70,7 +71,7 @@ class App extends Component {
           <tr><th>Spatula </th><td>Youmuu’s Ghostblade</td><td>Knight's Vow</td><td>Frozen Mallet</td><td> Yuumi </td><td>Runan's Hurricane</td><td>Blade of the Rune King</td><td>Leviathan</td><td>Demon</td></tr>
           <tr><th>Tear of the Goddess </th><td> Spear of Shojin</td><td>Frozen Heart</td><td>Redemption</td><td>Luden's Echo</td><td>Silence</td><td>Static Shiv</td><td>Demon</td><td>Seraph's Embrace</td></tr>
           </tbody>
-          </table>
+        </table> */}
 
           
           <table>

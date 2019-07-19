@@ -35,7 +35,11 @@ and (max-device-width : 667px)
 and (orientation : portrait) { 
   img{
     border-radius: 0px;
-    height: 16px;
-    width: 16px;
+    height: 36px;
+    width: 36px;
+  }
+
+  h2{
+
   }
 }
