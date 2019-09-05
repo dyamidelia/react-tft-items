@@ -15,7 +15,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         23123123123123123</p> */}
 
-          <h2>TeamFight Tactics Items</h2>
+          <h2>Dyami Delia - Developer</h2>
       </div>
           
           {/*<div class="dropdown"> <span>This is a DropDown for Builds</span>
