@@ -8,97 +8,61 @@ class App extends Component {
      
       <div className="App">
         <div className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        23123123123123123</p> */}
 
           <h2>Dyami Delia - Developer</h2>
-      </div>
+        </div>
           
-          {/*<div class="dropdown"> <span>This is a DropDown for Builds</span>
-          <div class="dropdown-content">
-          <p>Demons</p>
-          <p>Demons</p>
-          <p>Demons</p>
-          <p>Demons</p>
-          </div>
-          </div>*/}
-
-          {/*<h2>BF Sword</h2>
-          <img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/a/ab/B._F._Sword_item.png/revision/latest?cb=20171221055309" className="App-logo" alt="logo" />
-          
+          Projects
           <table>
-          <thead>
-          <tr><th>Item Combo</th><th>Final Item</th><th>Effects</th></tr>
-          </thead>
-          <tbody>
-          <tr><td>B.F. Sword</td><td>Infinity Edge</td><td>Critical Strike Damage is increased by 100%</td></tr>
-          <tr><td>Recurve Bow</td><td>Sword of the Divine</td><td>5% chance each second to gain 100% crit</td></tr>
-          <tr><td>Needlessly Large Rod</td><td>Hextech Gunblade</td><td>Heal 25% of damage dealt</td></tr>
-          <tr><td>Tear of the Goddess</td><td>Spear of Shojin</td><td>After casting an ability, recover 15% of remaining maximum Mana per attack</td></tr>
-          <tr><td>Chain Vest</td><td>Guardian Angel</td><td>Revive with 500HP</td></tr>
-          <tr><td>Negatron Cloak</td><td>The Bloodthirster</td><td>35% Lifesteal</td></tr>
-          <tr><td>Giant’s Belt</td><td>Zeke’s Herald</td><td>Adjacent allies gain +10% Attack Speed</td></tr>
-          <tr><td>Spatula</td><td>Youmuu’s Ghostblade</td><td>Wearer is also an Assassin</td></tr>
-          </tbody>
-          </table> */}
-
-        {/*
-          <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>BF Sword</th>
-              <th>Chain Mail</th>
-              <th>Giants Belt</th>
-              <th>Needlessly Large Rod</th>
-              <th>Cloak</th>
-              <th>Recurve Bow</th>
-              <th>Spatula</th>
-              <th>Tear</th>
-            </tr>
-          </thead>
-          <tbody>
-          <tr><th>B.F. Sword</th><td>Infinity Edge</td><td>Guardian Angel</td><td>Zeke’s Herald</td><td>Hextech Gunblade</td><td>The Bloodthirster</td><td>Sword of the Divine</td><td>Youmuu’s Ghostblade</td><td> Spear of Shojin</td></tr>
-          <tr><th>Chain Vest</th><td>Guardian Angel</td><td>ThornMail</td><td>Red Buff</td><td>Locket</td><td>Sword Breaker</td><td>Phantom Dancer</td><td>Knight's Vow</td><td>Frozen Heart</td></tr>
-          <tr><th>Giant’s Belt</th><td>Zeke’s Herald</td><td>Red Buff</td><td>Warmog's Armor</td><td>Morello's</td><td>Zephr</td><td>Titanic Hydra</td><td>Frozen Mallet</td><td>Redemption</td></tr>
-          <tr><th>Needlessly Large Rod</th><td>Hextech Gunblade</td><td>Locket</td><td>Morello's</td><td>Death Cap</td><td>Ionic Spark</td><td>Guinsoo's RageBlade</td><td>Yummi</td><td>Luden's Echo</td></tr>
-          <tr><th>Negatron Cloak</th><td>The Bloodthirster</td><td>Sword Breaker</td><td>Zephr</td><td>Ionic Spark</td><td>Dragon's Claw</td><td>Cursed Blade</td><td>Runan's Hurricane</td><td>Silence</td></tr>
-          <tr><th>Recurve Bow</th><td>Sword of the Divine</td><td>Phantom Dancer</td><td>Titanic Hydra</td><td>Guinsoo's RageBlade</td><td>Cursed Blade</td><td>Rapid Fire Cannon</td><td>Blade of the Ruined King</td><td>Static Shiv</td></tr>
-          <tr><th>Spatula </th><td>Youmuu’s Ghostblade</td><td>Knight's Vow</td><td>Frozen Mallet</td><td> Yuumi </td><td>Runan's Hurricane</td><td>Blade of the Rune King</td><td>Leviathan</td><td>Demon</td></tr>
-          <tr><th>Tear of the Goddess </th><td> Spear of Shojin</td><td>Frozen Heart</td><td>Redemption</td><td>Luden's Echo</td><td>Silence</td><td>Static Shiv</td><td>Demon</td><td>Seraph's Embrace</td></tr>
-          </tbody>
-        </table> */}
-
-          
-          <table>
-          <thead>
-            <tr>
-              <th><img src={logo}></img></th>
-              <th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1038.png"></img></th> {/*BF Sword */}
-              <th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1031.png"></img></th>
-              <th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1011.png"></img></th>
-              <th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1058.png"></img></th>
-              <th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1057.png"></img></th> {/*Cloack*/}
-              <th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1043.png"></img></th>{/*R Bow*/}
-              <th><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/d/dc/Spatula_item.png/revision/latest/scale-to-width-down/46?cb=20190618214319"></img></th>{/*Spat*/}
-              <th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3070.png"></img></th>{/*Tear*/}
-            </tr>
-          </thead>
-          <tbody>
-          <tr><th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1038.png"></img></th><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/1/15/Infinity_Edge_item.png/revision/latest?cb=20180531105945"></img></td><td><img src="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/d/da/Guardian_Angel.png?version=773faf5e7e62bb0da153e9ab11852145"></img></td><td><img src="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/3/36/Zeke%27s_Herald.png?version=430b04d74c6f1bda39638c42051a7ada"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3146.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3072.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9c/Sword_of_the_Divine_item.png/revision/latest?cb=20171223020826"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3142.png"></img></td><td> <img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1c/Spear_of_Shojin_item.png/revision/latest?cb=20180601205626"></img></td></tr>
-          <tr><th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1031.png"></img></th><td><img src="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/d/da/Guardian_Angel.png?version=773faf5e7e62bb0da153e9ab11852145"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3075.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e7/Red_BramblebackSquare.png/revision/latest/scale-to-width-down/46?cb=20140620025406"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3190.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e8/Sword_Breaker_item.png/revision/latest/scale-to-width-down/46?cb=20190618223710"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3046.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3109.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3110.png"></img></td></tr>
-          <tr><th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1011.png"></img></th><td><img src="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/3/36/Zeke%27s_Herald.png?version=430b04d74c6f1bda39638c42051a7ada"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e7/Red_BramblebackSquare.png/revision/latest/scale-to-width-down/46?cb=20140620025406"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3083.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/7/7b/Morellonomicon_item.png/revision/latest?cb=20180220141954"></img></td><td><img src="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/3/3e/Zephyr.png?version=cb0a396bbd0d809749734ad7e4b71f38"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3748.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3022.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3107.png"></img></td></tr>
-          <tr><th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1058.png"></img></th><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3146.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3190.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/7/7b/Morellonomicon_item.png/revision/latest?cb=20180220141954"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3089.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9c/Ionic_Spark_item.png/revision/latest?cb=20171223001148"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3124.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2b/You_and_Me%21.png/revision/latest/scale-to-width-down/46?cb=20190426210438"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3285.png"></img></td></tr>
-          <tr><th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1057.png"></img></th><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3072.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e8/Sword_Breaker_item.png/revision/latest/scale-to-width-down/46?cb=20190618223710"></img></td><td><img src="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/3/3e/Zephyr.png?version=cb0a396bbd0d809749734ad7e4b71f38"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9c/Ionic_Spark_item.png/revision/latest?cb=20171223001148"></img></td><td><img src="https://img.rankedboost.com/wp-content/plugins/league/assets/tft-items/Dragon's%20Claw.png"></img></td><td><img src="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/c/ce/Dervish_Blade.png?version=dc4633bb0ec12011d3aad0b06656cc8e"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3085.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/6/66/Hush_item.png/revision/latest?cb=20190618223755"></img></td></tr>
-          <tr><th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1043.png"></img></th><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/9/9c/Sword_of_the_Divine_item.png/revision/latest?cb=20171223020826"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3046.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3748.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3124.png"></img></td><td><img src="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/c/ce/Dervish_Blade.png?version=dc4633bb0ec12011d3aad0b06656cc8e"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3094.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3153.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3087.png"></img></td></tr>
-          <tr><th><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/d/dc/Spatula_item.png/revision/latest/scale-to-width-down/46?cb=20190618214319"></img></th><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3142.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3109.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3022.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/2/2b/You_and_Me%21.png/revision/latest/scale-to-width-down/46?cb=20190426210438"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3085.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3153.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/d/dd/Gladiator%27s_Pride_item.png/revision/latest?cb=20190630225143"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/d/de/World_Ender.png/revision/latest?cb=20180612213606"></img></td></tr>
-          <tr><th><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3070.png"></img></th><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1c/Spear_of_Shojin_item.png/revision/latest?cb=20180601205626"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3110.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3107.png"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3285.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/6/66/Hush_item.png/revision/latest?cb=20190618223755"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3087.png"></img></td><td><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/d/de/World_Ender.png/revision/latest?cb=20180612213606"></img></td><td><img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/3007.png"></img></td></tr>
-          </tbody>
           </table>
+
+           Palo Alto• CA CELL (650) 444-2913 • E-MAIL dyami.delia@gmail.com
+
+
+PROFILE          I am an Engineer who has a passion for technology. I have been working as  a developer, manager, and educator for the past 8 years.
+                          My main introduction to software came when my family got the internet in 1994.  I was fascinated by the web and began using HTML, CSS, and JS to create sites. I then learned more about databases  and js frameworks in courses and my own studies. In college I took courses in Algorithm Design and Analysis, Program Design, and Logic.
+
+EDUCATION Bachelors
+  University of Kentucky, Lexington, KY  Graduated 2009
+
+
+SKILLS  
+  W3 JavaScript Certification           HTML         CSS           NodeJS       PHP
+     Angular            Version Control    Management             Restful APIs
+     XML/WSDL      JSON      React       SwaggerUI                  AJAX          UX
+
+
+EXPERIENCE
+  
+Netclearly
+  PHP / Wordpress  Developer
+  May 2019 – June 2019 
+                                  
+                          I was brought on to Netclearly as a contractor to increase the performance of a PHP/Wordpress website. I significantly decreased the site's FTTB, download size, and render time. I removed unused plugins  and wrote custom PHP functions to reduce the number of calls  to the backend. Additionally I helped refactor, compress, and minify the css displayed on several pages. During this project I worked with Linux, Gitlab, Wordpress, Google Lighthouse, Docker, and Ngnix. Finally, I worked on the information architecture of their item database to optimize SQL queries and plan for a future NoSQL database.
+  
+
+   Tibco Software Inc.
+  UX  Developer
+  October 2014 – August 2018
+  
+                          I was brought on to Tibco as a contractor for a project named API Exchange. I built a restful API using PHP, Apache, Swagger UI, and Joomla plugins. Afterwards, I was responsible for the front end using JS, AJAX, Jquery, HTML, CSS and, MVC for the presentation layer PHP, Joomla, and MYSQL for the back end. I worked on the project for  around two years and eventually lead a team of four developers. My team and I worked to allow XML/WSDL importing for customers to                         define their web services. The domain of the project was API management.
+  In August 2015, Tibco acquired Mashery. I was brought on to be a knowledge sponge and help with the integration since Mashery was also an API management product. The front end technology was Backbone JS, Handlebars, Gulp, HTML, Less, and D3.
+  I was responsible for an entire CSS Rebranding and Refactoring. I found the front end architecture heavily component based with good separation of concerns. I also worked on unit testing in Mocha and Chai; Git hooks to run linting on commit. For the Mashery back end, I worked on refining the inputs and outputs for the PHP APIs and adding database tables for new feature work. I also worked on Docker optimization for the local development stack, CLI, Puppet, and Vagrant. 
+Around October 2016, I began working on a Tibco internal Learning and Development site. I was given a lead role to choose technologies and to turn client requests into requirements. The client expressed an interest in Google Sites, so I looked into that. Eventually, I settled on a  JS, HTML, CSS, and React front end and a NodeJS Google Docs back end that was hosted on Heroku. 
+For Clarity, I worked only on the front end. I used JS, React, LESS and Jquery. Clarity is used for data cleaning and transforming. Like Mashery, my team and I updated Clarity so that it would fit in with the Tibco Pattern Library and other cloud suite products.
+
+Business Connect is a B2B project. At the start, I was working with their legacy system to create a dashboard page using Tibco Spotfire. That used HTML, JSP, and JS for the front end. After a few months, we 
+decided on a rebuild and that was written using  Angular4 and Redux. I worked on Business Connect and Clarity concurrently.
+The Tibco department I worked in was the UX team, but we also had the name of Innovation Labs. As such, I was exposed in a few ways to new and interesting technologies. I was in charge of development interns for several years, so I got to teach and participate in many great student projects. We also had brown-bag lunches where experts in their field including myself would come and talk or give a hands-on meeting. I  worked on IOT, IOT swarm, Computer Vision, Python, Rasbian, and General Input Output within these projects.
+  Digital Media Academy 
+  Instructional Staff
+  June 2014 – August 2014
+I led six programs at  Berkeley, Stanford and Aspen teaching OOP principles  in JAVA to classes of 25 12-16 y/o students. I created curriculum and then taught the basics  of the Eclipse editor, Maven, Debugging and OOP principles. 
+                          Mangalam Research Center
+  Web Developer / Business Process Architect
+  Dec. 2011 – June 2014
+
+                          Created automated workflow and business process automation for user acquisition, information storage, networking, and integration.  I created and managed websites using Joomla 2.5, 3, 3.3, WordPress, Drupal, HTML, PHP, JavaScript, and CSS. Also, I worked with the Adobe Suite using Adobe Illustrator, InDesign, Photoshop to design brochures, flyers, postcards, inserts, bookmarks, and newsletters for both commercial printing and web display. Additionally,  I used Salesforce connectors  to allow automated database inserts from the current spreadsheets available. Lastly, I researched using XSL to transform older book XML formats into more modern machine readable data.
 
     
       </div>
