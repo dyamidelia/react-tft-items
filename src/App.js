@@ -1,17 +1,107 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import logo from './images/logo.svg';
 import './App.css';
 
-class App extends Component {
-  render() {
+function Example2(props){
+
+    const [count, setCount] = useState(false);
+// The gray background
+    const backdropStyle = {
+      position: 'fixed',
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0,
+      backgroundColor: 'rgba(0,0,0,0.3)',
+      padding: 50
+    };
+
+    // The modal "window"
+    const modalStyle = {
+      backgroundColor: 'red',
+      borderRadius: 5,
+      maxWidth: 500,
+      minHeight: 300,
+      margin: '0 auto',
+      padding: 30,
+      "text-align": "justify",
+      "text-justify" : "inter-word"
+    };
+
+    const eleVar = count ?
+      <div className="backdrop" style={backdropStyle}>
+        <div className="modal" style={modalStyle}>
+            {props.content}
+
+          <div className="footer">
+            <button onClick={() => setCount( !count )}>
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+
+      : 
+
+      <div className="footer">
+            <button onClick={() => setCount( !count )}>
+              View Project
+            </button>
+          </div>;
+
+    return (eleVar);
+}
+
+function Example(props) {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+
+}
+
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+function App(props){
+
+    const element = <Welcome name="Sara" />;
+    const element2 = <Example />;
+    const element3 = <Example2 
+
+    content={ <React.Fragment> <h1>Tibco Software Inc.</h1>
+                  <h2>UX  Developer</h2>
+                  <h3>October 2014 – August 2018 </h3>
+  
+                  <p>
+                         I was brought on to Tibco as a contractor for a project named API Exchange. I built a restful API using PHP, Apache, Swagger UI, and Joomla plugins. Afterwards, I was responsible for the front end using JS, AJAX, Jquery, HTML, CSS and, MVC for the presentation layer PHP, Joomla, and MYSQL for the back end. I worked on the project for  around two years and eventually lead a team of four developers. My team and I worked to allow XML/WSDL importing for customers to define their web services. The domain of the project was API management.
+                  </p>
+
+
+                  </React.Fragment>}
+/>;
+
+    const element4 = <Example2 content="Two"/>;
+
     return (
-     
+
       <div className="App">
         <div className="App-header">
 
-          <h2>Dyami Delia - Developer</h2>
+          <h2>Dyami <span className="blue"> Delia  </span> - Developer {element2}</h2>
         </div>
           
+          {element3}
+          {element4}
           Projects
           <table>
           </table>
@@ -67,7 +157,6 @@ I led six programs at  Berkeley, Stanford and Aspen teaching OOP principles  in 
     
       </div>
     );
-  }
 }
 
 export default App;
