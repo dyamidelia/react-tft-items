@@ -1,8 +1,11 @@
 import React, { Component, useState } from 'react';
-import logo from './images/logo.svg';
+import Image from './images/ComputerProgramming.jpg';
+import Badge1 from './images/badges/rest-badge.png';
+import Badge2 from './images/badges/angular-badge.png';
+import Badge3 from './images/badges/node-badge.jpg';
 import './App.css';
 
-function Example2(props){
+function Box(props){
 
     const [count, setCount] = useState(false);
 // The gray background
@@ -16,6 +19,28 @@ function Example2(props){
       padding: 50
     };
 
+    // The box style
+    const boxStyle = {
+      "border-color": "#274160",
+      "border-style": "solid",
+      "border-width" : "1px",
+      "border-left-style": "none",
+      "border-right-style": "none",
+      minHeight: 70,
+      margin: '0px auto -1px auto',
+      padding: 30,
+      "text-align": "justify",
+      "text-justify" : "inter-word",
+      color: "#bac9db",
+      maxWidth: 750
+    };
+
+    const buttonStyle= {
+      border: "1px solid blue",
+      borderRadius: 4,
+      color: "blue",
+      backgroundColor: "white"
+    }
     // The modal "window"
     const modalStyle = {
       backgroundColor: 'red',
@@ -42,41 +67,35 @@ function Example2(props){
       </div>
 
       : 
-
-      <div className="footer">
-            <button onClick={() => setCount( !count )}>
-              View Project
+      <React.Fragment> 
+      <div className="box" style={boxStyle}>
+      <img className="boxImage"src={Image} />
+      {props.name} 
+      <br/>
+            <button style={buttonStyle} onClick={() => setCount( !count )}>
+              Click For More Details
             </button>
-          </div>;
 
+            <img className="boxBadge"src={Badge1} />
+            <img className="boxBadge"src={Badge2} />
+            <img className="boxBadge"src={Badge3} />
+      </div>
+      </React.Fragment> 
     return (eleVar);
 }
 
-function Example(props) {
-  // Declare a new state variable, which we'll call "count"
-  const [count, setCount] = useState(0);
 
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-
-}
-
-
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
 
 function App(props){
 
-    const element = <Welcome name="Sara" />;
-    const element2 = <Example />;
-    const element3 = <Example2 
+    const box1 = <Box name="Mashery"/>
+    const box2 = <Box name="Learning and Development"/>
+    const box3 = <Box name="Clarity"/>
+    const box4 = <Box name="Business Connect"/>
+    const box5 = <Box name="Innovation Labs"/>
+    const box = <Box name="API Exchange"/>
+         
+    const element3 = <Box 
 
     content={ <React.Fragment> <h1>Tibco Software Inc.</h1>
                   <h2>UX  Developer</h2>
@@ -87,75 +106,46 @@ function App(props){
                   </p>
 
 
-                  </React.Fragment>}
-/>;
+                  </React.Fragment>}/>;
 
-    const element4 = <Example2 content="Two"/>;
 
     return (
-
+      <React.Fragment>
       <div className="App">
-        <div className="App-header">
 
-          <h2>Dyami <span className="blue"> Delia  </span> - Developer {element2}</h2>
+        <div className="App-header">
+        <h2>Dyami <span className="blue"> Delia  </span> - Developer </h2>
+         
+         <div className="App-header-nav">
+          <ul>
+          <li><a href="#home">Recent Projects</a></li>
+          <li><a href="#news">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li ><a href="#about">About</a></li>
+          </ul>
+         </div>
         </div>
+
+        <div className="App-content">
+          {box}{box1}{box2}{box3}{box4}{box5}
+
+          API Exchange
+
+          Netclearly
+          Digital Media Academy 
+          Mangalam Research Center
+
+          LinkedIn
+          Resume
+          Github
+
+          {box}{box1}{box2}{box3}{box4}{box5}
           
-          {element3}
-          {element4}
-          Projects
           <table>
           </table>
-
-           Palo Alto• CA CELL (650) 444-2913 • E-MAIL dyami.delia@gmail.com
-
-
-PROFILE          I am an Engineer who has a passion for technology. I have been working as  a developer, manager, and educator for the past 8 years.
-                          My main introduction to software came when my family got the internet in 1994.  I was fascinated by the web and began using HTML, CSS, and JS to create sites. I then learned more about databases  and js frameworks in courses and my own studies. In college I took courses in Algorithm Design and Analysis, Program Design, and Logic.
-
-EDUCATION Bachelors
-  University of Kentucky, Lexington, KY  Graduated 2009
-
-
-SKILLS  
-  W3 JavaScript Certification           HTML         CSS           NodeJS       PHP
-     Angular            Version Control    Management             Restful APIs
-     XML/WSDL      JSON      React       SwaggerUI                  AJAX          UX
-
-
-EXPERIENCE
-  
-Netclearly
-  PHP / Wordpress  Developer
-  May 2019 – June 2019 
-                                  
-                          I was brought on to Netclearly as a contractor to increase the performance of a PHP/Wordpress website. I significantly decreased the site's FTTB, download size, and render time. I removed unused plugins  and wrote custom PHP functions to reduce the number of calls  to the backend. Additionally I helped refactor, compress, and minify the css displayed on several pages. During this project I worked with Linux, Gitlab, Wordpress, Google Lighthouse, Docker, and Ngnix. Finally, I worked on the information architecture of their item database to optimize SQL queries and plan for a future NoSQL database.
-  
-
-   Tibco Software Inc.
-  UX  Developer
-  October 2014 – August 2018
-  
-                          I was brought on to Tibco as a contractor for a project named API Exchange. I built a restful API using PHP, Apache, Swagger UI, and Joomla plugins. Afterwards, I was responsible for the front end using JS, AJAX, Jquery, HTML, CSS and, MVC for the presentation layer PHP, Joomla, and MYSQL for the back end. I worked on the project for  around two years and eventually lead a team of four developers. My team and I worked to allow XML/WSDL importing for customers to                         define their web services. The domain of the project was API management.
-  In August 2015, Tibco acquired Mashery. I was brought on to be a knowledge sponge and help with the integration since Mashery was also an API management product. The front end technology was Backbone JS, Handlebars, Gulp, HTML, Less, and D3.
-  I was responsible for an entire CSS Rebranding and Refactoring. I found the front end architecture heavily component based with good separation of concerns. I also worked on unit testing in Mocha and Chai; Git hooks to run linting on commit. For the Mashery back end, I worked on refining the inputs and outputs for the PHP APIs and adding database tables for new feature work. I also worked on Docker optimization for the local development stack, CLI, Puppet, and Vagrant. 
-Around October 2016, I began working on a Tibco internal Learning and Development site. I was given a lead role to choose technologies and to turn client requests into requirements. The client expressed an interest in Google Sites, so I looked into that. Eventually, I settled on a  JS, HTML, CSS, and React front end and a NodeJS Google Docs back end that was hosted on Heroku. 
-For Clarity, I worked only on the front end. I used JS, React, LESS and Jquery. Clarity is used for data cleaning and transforming. Like Mashery, my team and I updated Clarity so that it would fit in with the Tibco Pattern Library and other cloud suite products.
-
-Business Connect is a B2B project. At the start, I was working with their legacy system to create a dashboard page using Tibco Spotfire. That used HTML, JSP, and JS for the front end. After a few months, we 
-decided on a rebuild and that was written using  Angular4 and Redux. I worked on Business Connect and Clarity concurrently.
-The Tibco department I worked in was the UX team, but we also had the name of Innovation Labs. As such, I was exposed in a few ways to new and interesting technologies. I was in charge of development interns for several years, so I got to teach and participate in many great student projects. We also had brown-bag lunches where experts in their field including myself would come and talk or give a hands-on meeting. I  worked on IOT, IOT swarm, Computer Vision, Python, Rasbian, and General Input Output within these projects.
-  Digital Media Academy 
-  Instructional Staff
-  June 2014 – August 2014
-I led six programs at  Berkeley, Stanford and Aspen teaching OOP principles  in JAVA to classes of 25 12-16 y/o students. I created curriculum and then taught the basics  of the Eclipse editor, Maven, Debugging and OOP principles. 
-                          Mangalam Research Center
-  Web Developer / Business Process Architect
-  Dec. 2011 – June 2014
-
-                          Created automated workflow and business process automation for user acquisition, information storage, networking, and integration.  I created and managed websites using Joomla 2.5, 3, 3.3, WordPress, Drupal, HTML, PHP, JavaScript, and CSS. Also, I worked with the Adobe Suite using Adobe Illustrator, InDesign, Photoshop to design brochures, flyers, postcards, inserts, bookmarks, and newsletters for both commercial printing and web display. Additionally,  I used Salesforce connectors  to allow automated database inserts from the current spreadsheets available. Lastly, I researched using XSL to transform older book XML formats into more modern machine readable data.
-
-    
+          </div>
       </div>
+      </React.Fragment>
     );
 }
 
